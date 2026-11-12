@@ -1,0 +1,16 @@
+Kalanos MCP integrations
+Copyright 2026 Kalanos AI
+
+Portions of the selection verification logic are derived from Kalanos CLI
+selection work for KalanosAI/kalanos, distributed under the Apache License,
+Version 2.0.
+
+The third-party tools and SDKs that integrations connect to are external
+dependencies. Their source code is not copied into this repository, and they
+retain their own licenses, trademarks and attribution. Example datasets and their
+published evidence retain their respective source terms and attribution. Each
+integration's README lists its specific dependencies and sources.
+
+All product, company and project names are trademarks of their respective owners.
+They are used only to identify compatibility. This project is independent and is
+not affiliated with, sponsored by or endorsed by those owners.

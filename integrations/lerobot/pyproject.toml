@@ -1,0 +1,45 @@
+[project]
+name = "kalanos-mcp-lerobot"
+version = "0.1.0"
+description = "Turn published Kalanos MCP evidence into pinned LeRobot episode selections"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = [
+  "mcp>=1.30,<2",
+  "pydantic>=2.10,<3",
+  "polars>=1.35,<2",
+  "typer>=0.16,<1",
+  "httpx>=0.27,<1",
+]
+
+[project.optional-dependencies]
+lerobot = [
+    "lerobot[av-dep,dataset]==0.7.0",
+]
+
+[project.scripts]
+kalanos-lerobot = "kalanos_mcp_lerobot.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kalanos_mcp_lerobot"]
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,56 @@
+{
+  "source_ref": "lerobot/xarm_lift_medium_replay",
+  "source_dataset_revision": "1da06eafab3a2e6ad52e36edfba6583bd6378d19",
+  "status": "passed",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 2419,
+      "sha256": "a2bdf429c1bc3858213bb4b7a748fa36a71536a5a1ff98861281853c3c2be1f2",
+      "verified_against": "exact_committed_git_bytes"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3368,
+      "sha256": "0650cf886bcb149939b686bdd38f0ba5f683076888808481c6b33257f117eb79",
+      "verified_against": "exact_committed_git_bytes"
+    },
+    {
+      "path": "data/chunk-000/file-000.parquet",
+      "size_bytes": 1194119,
+      "sha256": "9d85c96b5f1df39f1ab5f22cb39688919845c1724b0b978001e6dd4298dca5be",
+      "verified_against": "committed_lfs_sha256_and_size"
+    },
+    {
+      "path": "meta/episodes/chunk-000/file-000.parquet",
+      "size_bytes": 314138,
+      "sha256": "f2b8bea6ef848020a360589e874314f55c563447e559cded35e9d1987c65f91c",
+      "verified_against": "committed_lfs_sha256_and_size"
+    },
+    {
+      "path": "meta/info.json",
+      "size_bytes": 2182,
+      "sha256": "2dd3ea80750521bdd4601f4031c1ed425066c1c83ae3b7feabe01c36287dc635",
+      "verified_against": "exact_committed_git_bytes"
+    },
+    {
+      "path": "meta/stats.json",
+      "size_bytes": 4561,
+      "sha256": "35ba91ab8e7866b447721f4382085c43e7e1226410d22331805007cd63f4f552",
+      "verified_against": "exact_committed_git_bytes"
+    },
+    {
+      "path": "meta/tasks.parquet",
+      "size_bytes": 2175,
+      "sha256": "eeebda12965fb1a6a746cddd25f3e8342c191f1b523a8027bf0024b57141d34b",
+      "verified_against": "committed_lfs_sha256_and_size"
+    },
+    {
+      "path": "videos/observation.image/chunk-000/file-000.mp4",
+      "size_bytes": 17407608,
+      "sha256": "ca252660b310b8744b9a9b1dabf15f12e5da6b89e9528c1f5bac4d2f8bd2ac1a",
+      "verified_against": "committed_lfs_sha256_and_size"
+    }
+  ],
+  "total_bytes": 18930570
+}

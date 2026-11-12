@@ -1,0 +1,3532 @@
+[
+  {
+    "schema_version": "kalanos.mcp.v1",
+    "report_id": "0MVYOQRXB6E4C9564845047A1B",
+    "dataset": "@kalanos/hf/lerobot/xarm_lift_medium_replay",
+    "source_ref": "lerobot/xarm_lift_medium_replay",
+    "dataset_revision": "1da06ea",
+    "graded_at": "2026-11-02T03:08:29Z",
+    "report_kind": "full",
+    "grader_version": "kalanos-0.9.2+ga422365",
+    "readiness": null,
+    "episode_count": 800,
+    "hours": 0.36,
+    "size_gb": 0.02,
+    "format": "lerobot",
+    "robot": "unknown",
+    "license": "mit",
+    "provenance": {
+      "report_url": "https://hub.kalanos.ai/d/%40kalanos/hf/lerobot/xarm_lift_medium_replay"
+    },
+    "report_revision": "5dfeab2ecd8fbc12dd941db208976f55",
+    "assessment_status": "published_report",
+    "source_dataset_revision": "1da06eafab3a2e6ad52e36edfba6583bd6378d19",
+    "coverage": {
+      "metrics": [
+        {
+          "key": "annotation.task_instruction_missing",
+          "unit": "episode_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        },
+        {
+          "key": "integrity.dead_taxel_pct",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "0": 800,
+            "1": 800,
+            "2": 800,
+            "3": 800,
+            "4": 800
+          }
+        },
+        {
+          "key": "integrity.drift",
+          "unit": "channel_episode",
+          "computed": 7200,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "5": 800
+          }
+        },
+        {
+          "key": "integrity.flatline_pct",
+          "unit": "channel_episode",
+          "computed": 7200,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "6": 800
+          }
+        },
+        {
+          "key": "integrity.hysteresis",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "0": 800,
+            "1": 800,
+            "2": 800,
+            "3": 800,
+            "4": 800
+          }
+        },
+        {
+          "key": "integrity.missing_pct",
+          "unit": "channel_episode",
+          "computed": 8000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000
+        },
+        {
+          "key": "integrity.snr_db",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 1600,
+          "unavailable": 6400,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 6400,
+          "reasons": {
+            "7": 6400,
+            "8": 800,
+            "9": 800
+          }
+        },
+        {
+          "key": "integrity.spike_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 8000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "10": 8000
+          }
+        },
+        {
+          "key": "motion.action_chatter",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "11": 800,
+            "12": 800,
+            "13": 800,
+            "14": 800,
+            "15": 800
+          }
+        },
+        {
+          "key": "motion.energy_proxy",
+          "unit": "episode_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "16": 800
+          }
+        },
+        {
+          "key": "motion.hf_vibration_ratio",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.limit_proximity_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "motion.log_dimensionless_jerk",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "motion.max_abs_jerk",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.max_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.mean_jerk_norm",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.mean_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.p99_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.still_drift",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.vel_saturation_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "11": 3200,
+            "12": 3200,
+            "13": 800,
+            "14": 800
+          }
+        },
+        {
+          "key": "motion.velocity_spike_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "timing.drop_rate",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.dt_jitter_ms",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.effective_hz",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.monotonic_violations",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_drop_estimate",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_dt_spread_ms",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_hz",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "vision.blank_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.bright_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.camera_stream_present",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.camera_sync_skew_ms",
+          "unit": "episode_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "28": 800
+          }
+        },
+        {
+          "key": "vision.contrast_score",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.cut_count",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.dark_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.dropped_chunk_count",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.exposure_level",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.exposure_shift_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.frame_count_vs_timebase",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.frozen_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.max_gap_s",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.pts_defect_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.sharpness_score",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.video_control_lag_ms",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.video_format_consistency",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        }
+      ],
+      "capabilities": [
+        {
+          "key": "acquisition_timing",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "29": 800
+          }
+        },
+        {
+          "key": "behavioral_diversity",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "29": 800
+          }
+        },
+        {
+          "key": "numeric",
+          "unit": "episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        },
+        {
+          "key": "video_quality",
+          "unit": "episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        }
+      ],
+      "dimensions": [
+        {
+          "key": "behavioral_diversity",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "30": 800
+          }
+        },
+        {
+          "key": "capture_origin_evidence",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "31": 4000
+          }
+        },
+        {
+          "key": "semantic_mapping",
+          "unit": "channel_episode",
+          "computed": 4800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000
+        },
+        {
+          "key": "visual_quality",
+          "unit": "camera_stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        }
+      ],
+      "inventory_complete": true,
+      "unassessed_episodes": 0,
+      "refused_sources": 0,
+      "count_scope": "loaded_subjects",
+      "decoded_frames_examined": 20000,
+      "eligible_visual_frames": 20000
+    },
+    "unavailable_checks": [
+      {
+        "key": "integrity.dead_taxel_pct",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "0": 800,
+          "1": 800,
+          "2": 800,
+          "3": 800,
+          "4": 800
+        }
+      },
+      {
+        "key": "integrity.drift",
+        "unit": "channel_episode",
+        "computed": 7200,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "5": 800
+        }
+      },
+      {
+        "key": "integrity.flatline_pct",
+        "unit": "channel_episode",
+        "computed": 7200,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "6": 800
+        }
+      },
+      {
+        "key": "integrity.hysteresis",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "0": 800,
+          "1": 800,
+          "2": 800,
+          "3": 800,
+          "4": 800
+        }
+      },
+      {
+        "key": "integrity.snr_db",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 1600,
+        "unavailable": 6400,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 6400,
+        "reasons": {
+          "7": 6400,
+          "8": 800,
+          "9": 800
+        }
+      },
+      {
+        "key": "integrity.spike_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 8000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "10": 8000
+        }
+      },
+      {
+        "key": "motion.action_chatter",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "11": 800,
+          "12": 800,
+          "13": 800,
+          "14": 800,
+          "15": 800
+        }
+      },
+      {
+        "key": "motion.energy_proxy",
+        "unit": "episode_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "16": 800
+        }
+      },
+      {
+        "key": "motion.hf_vibration_ratio",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.limit_proximity_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "motion.log_dimensionless_jerk",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "motion.max_abs_jerk",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.max_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.mean_jerk_norm",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.mean_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.p99_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.still_drift",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.vel_saturation_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "11": 3200,
+          "12": 3200,
+          "13": 800,
+          "14": 800
+        }
+      },
+      {
+        "key": "motion.velocity_spike_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "timing.drop_rate",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "timing.dt_jitter_ms",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "timing.effective_hz",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "vision.blank_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.bright_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.camera_stream_present",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.camera_sync_skew_ms",
+        "unit": "episode_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "28": 800
+        }
+      },
+      {
+        "key": "vision.contrast_score",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.cut_count",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.dark_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.dropped_chunk_count",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.exposure_level",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.exposure_shift_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.frame_count_vs_timebase",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.frozen_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.max_gap_s",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.pts_defect_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.sharpness_score",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.video_control_lag_ms",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.video_format_consistency",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      }
+    ],
+    "interpretation": "Results apply only to the recorded revision and assessed scope. Missing, unavailable and unassessed checks are not passes.",
+    "episodes": [
+      {
+        "episode": {
+          "id": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000038",
+          "key": "38",
+          "label": "episode_000038",
+          "status": "review",
+          "reasons": [
+            {
+              "id": "extero.exterior_rgb.vision.exposure_vs_camera",
+              "kind": "finding",
+              "status": "review",
+              "consequence": "review",
+              "detail": 44
+            }
+          ],
+          "quality": 100,
+          "samples": 25,
+          "duration": 1.600000023841858,
+          "tasks": [
+            "Pick up the cube and lift it."
+          ],
+          "findings": null,
+          "diagnostics": null
+        },
+        "source_episode_index": 38,
+        "source_episode_index_status": "candidate_requires_verification",
+        "decision_reasons": [
+          {
+            "reference": 44,
+            "id": "extero.exterior_rgb.vision.exposure_vs_camera",
+            "text": null,
+            "resolved": false
+          }
+        ],
+        "findings": [
+          {
+            "metric_id": "vision.exposure_vs_camera",
+            "episode_id": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000038",
+            "consequence": "review",
+            "severity": "critical",
+            "support": {
+              "kind": "whole_episode",
+              "index_space": null,
+              "intervals": []
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "id": "8b28bd15efa166b0b43d355477f7b8765a69a2b8eeda5ceb90fe003b5c499148",
+            "metric_id": "vision.exposure_vs_camera",
+            "family": "vision",
+            "severity": "critical",
+            "consequence": "review",
+            "value": 91.39886474609375,
+            "unit": "gray level",
+            "source_field": "observation.image",
+            "source_index": null,
+            "stream": "extero.exterior_rgb",
+            "instance": null,
+            "channel": null,
+            "evidence": {
+              "camera": "observation.image",
+              "n_episodes": 800,
+              "camera_median": 111.78433227539062,
+              "fences": [
+                106.95117950439453,
+                116.13983917236328
+              ],
+              "gap": 20
+            },
+            "support": {
+              "kind": "whole_episode",
+              "index_space": null,
+              "intervals": []
+            },
+            "calibration": {
+              "accepted": false,
+              "reason": 46
+            },
+            "subject_level": "stream",
+            "node": "n14"
+          }
+        ],
+        "flagged": [
+          {
+            "episode": "episode_000038",
+            "issue": "vision.exposure_vs_camera",
+            "detail": "critical: extero.exterior_rgb = 91.4gray level"
+          }
+        ],
+        "video": [
+          {
+            "episode": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000038",
+            "episodeKey": "38",
+            "field": "observation.image",
+            "source": ".",
+            "taxonomy": "extero.exterior_rgb",
+            "instance": null,
+            "metrics": {
+              "sharpness_score": {
+                "value": 0.9118799107893594,
+                "unit": "fraction",
+                "status": "good",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "laplacian_var": 1249.6394540267204,
+                  "min_loss": 0.9024457799627511,
+                  "worst_index": 4
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "exposure_shift_pct": {
+                "value": 0,
+                "unit": "%",
+                "status": "good",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "darker": 0,
+                  "brighter": 0,
+                  "clipped": 0,
+                  "blank": 0,
+                  "typical_mean": 91.39886474609375,
+                  "typical_white_share": 0.0052490234375,
+                  "worst_index": null,
+                  "bad_indices": []
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "exposure_level": {
+                "value": 91.39886474609375,
+                "unit": "gray level",
+                "status": "report_only",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "dark_share": 0.121826171875,
+                  "bright_share": 0.0052490234375,
+                  "ungraded_reason": "no threshold band for extero.exterior_rgb or default"
+                },
+                "availability": "computed"
+              },
+              "frozen_frame_pct": {
+                "value": 0,
+                "unit": "%",
+                "status": "good",
+                "evidence": {
+                  "n_frames": 25,
+                  "n_read": 25,
+                  "n_windows": 1,
+                  "full_scan": true,
+                  "n_runs": 0,
+                  "n_idle_runs": 0,
+                  "longest_run_s": 0,
+                  "first_run_index": null,
+                  "eps": 0.9242594838142395,
+                  "n_blank_pairs": 0
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "frame_count_vs_timebase": {
+                "value": 0,
+                "unit": "fraction",
+                "status": "good",
+                "evidence": {
+                  "present": 25,
+                  "implied": 25,
+                  "truncated": false
+                },
+                "availability": "computed",
+                "points": 100
+              }
+            },
+            "frames": {
+              "sample_plan": "full_scan_v1",
+              "availability": "computed",
+              "reason": null,
+              "decoded_frames": 25,
+              "adjacent_pairs_examined": 24,
+              "parameters": {
+                "sample_frames": 10,
+                "full_frame_scan": true,
+                "max_decode_frames": 20000,
+                "max_pixels": 2097152,
+                "preview_frames": 8,
+                "preview_size": 96,
+                "dark_level": 5,
+                "bright_level": 250
+              },
+              "requested_rows": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "missing_rows": [],
+              "measured_count": 25,
+              "identical_pair_count": 0,
+              "preview": [
+                {
+                  "source_row": 0,
+                  "presentation_time_s": 63.333333333333336,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1559.0878498747768,
+                  "clipped_fraction": 0.08587646484375,
+                  "luma_sha256": "d287a1a51a4b7e9f6e23a6cd5114940a2e282506fbd19b37f84e30cb5b591946"
+                },
+                {
+                  "source_row": 1,
+                  "presentation_time_s": 63.4,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1686.6897590374767,
+                  "clipped_fraction": 0.09356689453125
+                },
+                {
+                  "source_row": 2,
+                  "presentation_time_s": 63.46666666666667,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1538.7470491134955,
+                  "clipped_fraction": 0.0911865234375
+                },
+                {
+                  "source_row": 3,
+                  "presentation_time_s": 63.53333333333333,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1555.7322631850323,
+                  "clipped_fraction": 0.1063232421875,
+                  "luma_sha256": "c18e6f53c9a2a19e4fc79ac7ffd1fcd951e059f528a7d3a172dc4ae1041dbde8"
+                },
+                {
+                  "source_row": 4,
+                  "presentation_time_s": 63.6,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1505.4993053862304,
+                  "clipped_fraction": 0.1021728515625
+                },
+                {
+                  "source_row": 5,
+                  "presentation_time_s": 63.666666666666664,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1596.8444778238502,
+                  "clipped_fraction": 0.099365234375,
+                  "luma_sha256": "3152582cb5d03738375491a1c86353dfc22dd7dceaf77bc85eaa38529f767bd5"
+                },
+                {
+                  "source_row": 6,
+                  "presentation_time_s": 63.733333333333334,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1646.06145406494,
+                  "clipped_fraction": 0.10528564453125
+                },
+                {
+                  "source_row": 7,
+                  "presentation_time_s": 63.8,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1571.6930548089524,
+                  "clipped_fraction": 0.09527587890625
+                },
+                {
+                  "source_row": 8,
+                  "presentation_time_s": 63.86666666666667,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1766.9683351449398,
+                  "clipped_fraction": 0.0831298828125,
+                  "luma_sha256": "36f3191a1bdec0f176145a31b391cb7de456750123898b6a139a9b23cec5ddf7"
+                },
+                {
+                  "source_row": 9,
+                  "presentation_time_s": 63.93333333333333,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1458.919823080402,
+                  "clipped_fraction": 0.16265869140625
+                },
+                {
+                  "source_row": 10,
+                  "presentation_time_s": 64,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1331.6986469308622,
+                  "clipped_fraction": 0.1561279296875
+                },
+                {
+                  "source_row": 11,
+                  "presentation_time_s": 64.06666666666666,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1249.6394540267204,
+                  "clipped_fraction": 0.14227294921875,
+                  "luma_sha256": "d285698fe9df099857d0b5d7224c13be297bb04ef29296cd4a69b287b46d3a5d"
+                }
+              ]
+            }
+          }
+        ],
+        "labels": null
+      }
+    ],
+    "page": {
+      "after": 38,
+      "limit": 1,
+      "total_episodes": 800,
+      "next_after": 39
+    },
+    "labels": {
+      "review": "auto"
+    }
+  },
+  {
+    "schema_version": "kalanos.mcp.v1",
+    "report_id": "0MVYOQRXB6E4C9564845047A1B",
+    "dataset": "@kalanos/hf/lerobot/xarm_lift_medium_replay",
+    "source_ref": "lerobot/xarm_lift_medium_replay",
+    "dataset_revision": "1da06ea",
+    "graded_at": "2026-11-02T03:08:29Z",
+    "report_kind": "full",
+    "grader_version": "kalanos-0.9.2+ga422365",
+    "readiness": null,
+    "episode_count": 800,
+    "hours": 0.36,
+    "size_gb": 0.02,
+    "format": "lerobot",
+    "robot": "unknown",
+    "license": "mit",
+    "provenance": {
+      "report_url": "https://hub.kalanos.ai/d/%40kalanos/hf/lerobot/xarm_lift_medium_replay"
+    },
+    "report_revision": "5dfeab2ecd8fbc12dd941db208976f55",
+    "assessment_status": "published_report",
+    "source_dataset_revision": "1da06eafab3a2e6ad52e36edfba6583bd6378d19",
+    "coverage": {
+      "metrics": [
+        {
+          "key": "annotation.task_instruction_missing",
+          "unit": "episode_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        },
+        {
+          "key": "integrity.dead_taxel_pct",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "0": 800,
+            "1": 800,
+            "2": 800,
+            "3": 800,
+            "4": 800
+          }
+        },
+        {
+          "key": "integrity.drift",
+          "unit": "channel_episode",
+          "computed": 7200,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "5": 800
+          }
+        },
+        {
+          "key": "integrity.flatline_pct",
+          "unit": "channel_episode",
+          "computed": 7200,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "6": 800
+          }
+        },
+        {
+          "key": "integrity.hysteresis",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "0": 800,
+            "1": 800,
+            "2": 800,
+            "3": 800,
+            "4": 800
+          }
+        },
+        {
+          "key": "integrity.missing_pct",
+          "unit": "channel_episode",
+          "computed": 8000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000
+        },
+        {
+          "key": "integrity.snr_db",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 1600,
+          "unavailable": 6400,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 6400,
+          "reasons": {
+            "7": 6400,
+            "8": 800,
+            "9": 800
+          }
+        },
+        {
+          "key": "integrity.spike_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 8000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000,
+          "reasons": {
+            "10": 8000
+          }
+        },
+        {
+          "key": "motion.action_chatter",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "11": 800,
+            "12": 800,
+            "13": 800,
+            "14": 800,
+            "15": 800
+          }
+        },
+        {
+          "key": "motion.energy_proxy",
+          "unit": "episode_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "16": 800
+          }
+        },
+        {
+          "key": "motion.hf_vibration_ratio",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.limit_proximity_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "motion.log_dimensionless_jerk",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "motion.max_abs_jerk",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.max_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.mean_jerk_norm",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.mean_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.p99_torque",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "17": 3200,
+            "18": 3200,
+            "19": 800,
+            "20": 800
+          }
+        },
+        {
+          "key": "motion.still_drift",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 3200,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "21": 800,
+            "22": 800,
+            "23": 800,
+            "24": 800,
+            "25": 800
+          }
+        },
+        {
+          "key": "motion.vel_saturation_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "11": 3200,
+            "12": 3200,
+            "13": 800,
+            "14": 800
+          }
+        },
+        {
+          "key": "motion.velocity_spike_pct",
+          "unit": "channel_episode",
+          "computed": 0,
+          "not_applicable": 4800,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 3200,
+          "reasons": {
+            "21": 3200,
+            "22": 3200,
+            "23": 800,
+            "24": 800
+          }
+        },
+        {
+          "key": "timing.drop_rate",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.dt_jitter_ms",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.effective_hz",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "26": 4000
+          }
+        },
+        {
+          "key": "timing.monotonic_violations",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_drop_estimate",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_dt_spread_ms",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "timing.recorded_hz",
+          "unit": "stream_episode",
+          "computed": 4000,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000
+        },
+        {
+          "key": "vision.blank_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.bright_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.camera_stream_present",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.camera_sync_skew_ms",
+          "unit": "episode_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 800,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800,
+          "reasons": {
+            "28": 800
+          }
+        },
+        {
+          "key": "vision.contrast_score",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.cut_count",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.dark_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.dropped_chunk_count",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.exposure_level",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.exposure_shift_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.frame_count_vs_timebase",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.frozen_frame_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.max_gap_s",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.pts_defect_pct",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.sharpness_score",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.video_control_lag_ms",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        },
+        {
+          "key": "vision.video_format_consistency",
+          "unit": "stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "27": 3200
+          }
+        }
+      ],
+      "capabilities": [
+        {
+          "key": "acquisition_timing",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "29": 800
+          }
+        },
+        {
+          "key": "behavioral_diversity",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "29": 800
+          }
+        },
+        {
+          "key": "numeric",
+          "unit": "episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        },
+        {
+          "key": "video_quality",
+          "unit": "episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        }
+      ],
+      "dimensions": [
+        {
+          "key": "behavioral_diversity",
+          "unit": "episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 800,
+          "eligible": 0,
+          "reasons": {
+            "30": 800
+          }
+        },
+        {
+          "key": "capture_origin_evidence",
+          "unit": "stream_episode",
+          "computed": 0,
+          "not_applicable": 0,
+          "unavailable": 4000,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 4000,
+          "reasons": {
+            "31": 4000
+          }
+        },
+        {
+          "key": "semantic_mapping",
+          "unit": "channel_episode",
+          "computed": 4800,
+          "not_applicable": 0,
+          "unavailable": 3200,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 8000
+        },
+        {
+          "key": "visual_quality",
+          "unit": "camera_stream_episode",
+          "computed": 800,
+          "not_applicable": 0,
+          "unavailable": 0,
+          "skipped": 0,
+          "error": 0,
+          "not_required": 0,
+          "eligible": 800
+        }
+      ],
+      "inventory_complete": true,
+      "unassessed_episodes": 0,
+      "refused_sources": 0,
+      "count_scope": "loaded_subjects",
+      "decoded_frames_examined": 20000,
+      "eligible_visual_frames": 20000
+    },
+    "unavailable_checks": [
+      {
+        "key": "integrity.dead_taxel_pct",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "0": 800,
+          "1": 800,
+          "2": 800,
+          "3": 800,
+          "4": 800
+        }
+      },
+      {
+        "key": "integrity.drift",
+        "unit": "channel_episode",
+        "computed": 7200,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "5": 800
+        }
+      },
+      {
+        "key": "integrity.flatline_pct",
+        "unit": "channel_episode",
+        "computed": 7200,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "6": 800
+        }
+      },
+      {
+        "key": "integrity.hysteresis",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "0": 800,
+          "1": 800,
+          "2": 800,
+          "3": 800,
+          "4": 800
+        }
+      },
+      {
+        "key": "integrity.snr_db",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 1600,
+        "unavailable": 6400,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 6400,
+        "reasons": {
+          "7": 6400,
+          "8": 800,
+          "9": 800
+        }
+      },
+      {
+        "key": "integrity.spike_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 8000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 8000,
+        "reasons": {
+          "10": 8000
+        }
+      },
+      {
+        "key": "motion.action_chatter",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "11": 800,
+          "12": 800,
+          "13": 800,
+          "14": 800,
+          "15": 800
+        }
+      },
+      {
+        "key": "motion.energy_proxy",
+        "unit": "episode_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "16": 800
+        }
+      },
+      {
+        "key": "motion.hf_vibration_ratio",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.limit_proximity_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "motion.log_dimensionless_jerk",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "motion.max_abs_jerk",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.max_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.mean_jerk_norm",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.mean_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.p99_torque",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "17": 3200,
+          "18": 3200,
+          "19": 800,
+          "20": 800
+        }
+      },
+      {
+        "key": "motion.still_drift",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 3200,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "21": 800,
+          "22": 800,
+          "23": 800,
+          "24": 800,
+          "25": 800
+        }
+      },
+      {
+        "key": "motion.vel_saturation_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "11": 3200,
+          "12": 3200,
+          "13": 800,
+          "14": 800
+        }
+      },
+      {
+        "key": "motion.velocity_spike_pct",
+        "unit": "channel_episode",
+        "computed": 0,
+        "not_applicable": 4800,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 3200,
+        "reasons": {
+          "21": 3200,
+          "22": 3200,
+          "23": 800,
+          "24": 800
+        }
+      },
+      {
+        "key": "timing.drop_rate",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "timing.dt_jitter_ms",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "timing.effective_hz",
+        "unit": "stream_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 4000,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "26": 4000
+        }
+      },
+      {
+        "key": "vision.blank_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.bright_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.camera_stream_present",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.camera_sync_skew_ms",
+        "unit": "episode_episode",
+        "computed": 0,
+        "not_applicable": 0,
+        "unavailable": 800,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 800,
+        "reasons": {
+          "28": 800
+        }
+      },
+      {
+        "key": "vision.contrast_score",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.cut_count",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.dark_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.dropped_chunk_count",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.exposure_level",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.exposure_shift_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.frame_count_vs_timebase",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.frozen_frame_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.max_gap_s",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.pts_defect_pct",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.sharpness_score",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.video_control_lag_ms",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      },
+      {
+        "key": "vision.video_format_consistency",
+        "unit": "stream_episode",
+        "computed": 800,
+        "not_applicable": 0,
+        "unavailable": 3200,
+        "skipped": 0,
+        "error": 0,
+        "not_required": 0,
+        "eligible": 4000,
+        "reasons": {
+          "27": 3200
+        }
+      }
+    ],
+    "interpretation": "Results apply only to the recorded revision and assessed scope. Missing, unavailable and unassessed checks are not passes.",
+    "episodes": [
+      {
+        "episode": {
+          "id": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000046",
+          "key": "46",
+          "label": "episode_000046",
+          "status": "review",
+          "reasons": [
+            {
+              "id": "extero.exterior_rgb.vision.exposure_vs_camera",
+              "kind": "finding",
+              "status": "review",
+              "consequence": "review",
+              "detail": 45
+            }
+          ],
+          "quality": 100,
+          "samples": 25,
+          "duration": 1.600000023841858,
+          "tasks": [
+            "Pick up the cube and lift it."
+          ],
+          "findings": null,
+          "diagnostics": null
+        },
+        "source_episode_index": 46,
+        "source_episode_index_status": "candidate_requires_verification",
+        "decision_reasons": [
+          {
+            "reference": 45,
+            "id": "extero.exterior_rgb.vision.exposure_vs_camera",
+            "text": null,
+            "resolved": false
+          }
+        ],
+        "findings": [
+          {
+            "metric_id": "vision.exposure_vs_camera",
+            "episode_id": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000046",
+            "consequence": "review",
+            "severity": "critical",
+            "support": {
+              "kind": "whole_episode",
+              "index_space": null,
+              "intervals": []
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "id": "9a7a3bf1ac80e9a828b979600255ff887980f188ed4d837df578e06ccc9ff979",
+            "metric_id": "vision.exposure_vs_camera",
+            "family": "vision",
+            "severity": "critical",
+            "consequence": "review",
+            "value": 89.265869140625,
+            "unit": "gray level",
+            "source_field": "observation.image",
+            "source_index": null,
+            "stream": "extero.exterior_rgb",
+            "instance": null,
+            "channel": null,
+            "evidence": {
+              "camera": "observation.image",
+              "n_episodes": 800,
+              "camera_median": 111.78433227539062,
+              "fences": [
+                106.95117950439453,
+                116.13983917236328
+              ],
+              "gap": 20
+            },
+            "support": {
+              "kind": "whole_episode",
+              "index_space": null,
+              "intervals": []
+            },
+            "calibration": {
+              "accepted": false,
+              "reason": 46
+            },
+            "subject_level": "stream",
+            "node": "n14"
+          }
+        ],
+        "flagged": [
+          {
+            "episode": "episode_000046",
+            "issue": "vision.exposure_vs_camera",
+            "detail": "critical: extero.exterior_rgb = 89.27gray level"
+          }
+        ],
+        "video": [
+          {
+            "episode": "xarm_lift_medium_replay@1da06eafab3a2e6ad52e36edfba6583bd6378d19::episode_000046",
+            "episodeKey": "46",
+            "field": "observation.image",
+            "source": ".",
+            "taxonomy": "extero.exterior_rgb",
+            "instance": null,
+            "metrics": {
+              "sharpness_score": {
+                "value": 0.9132764930525568,
+                "unit": "fraction",
+                "status": "good",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "laplacian_var": 1320.856624109399,
+                  "min_loss": 0.9034116715958678,
+                  "worst_index": 5
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "exposure_shift_pct": {
+                "value": 0,
+                "unit": "%",
+                "status": "good",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "darker": 0,
+                  "brighter": 0,
+                  "clipped": 0,
+                  "blank": 0,
+                  "typical_mean": 89.265869140625,
+                  "typical_white_share": 0.00518798828125,
+                  "worst_index": null,
+                  "bad_indices": []
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "exposure_level": {
+                "value": 89.265869140625,
+                "unit": "gray level",
+                "status": "report_only",
+                "evidence": {
+                  "n_sampled": 25,
+                  "n_frames": 25,
+                  "dark_share": 0.12176513671875,
+                  "bright_share": 0.00518798828125,
+                  "ungraded_reason": "no threshold band for extero.exterior_rgb or default"
+                },
+                "availability": "computed"
+              },
+              "frozen_frame_pct": {
+                "value": 0,
+                "unit": "%",
+                "status": "good",
+                "evidence": {
+                  "n_frames": 25,
+                  "n_read": 25,
+                  "n_windows": 1,
+                  "full_scan": true,
+                  "n_runs": 0,
+                  "n_idle_runs": 0,
+                  "longest_run_s": 0,
+                  "first_run_index": null,
+                  "eps": 1.4044290781021118,
+                  "n_blank_pairs": 0
+                },
+                "availability": "computed",
+                "points": 100
+              },
+              "frame_count_vs_timebase": {
+                "value": 0,
+                "unit": "fraction",
+                "status": "good",
+                "evidence": {
+                  "present": 25,
+                  "implied": 25,
+                  "truncated": false
+                },
+                "availability": "computed",
+                "points": 100
+              }
+            },
+            "frames": {
+              "sample_plan": "full_scan_v1",
+              "availability": "computed",
+              "reason": null,
+              "decoded_frames": 25,
+              "adjacent_pairs_examined": 24,
+              "parameters": {
+                "sample_frames": 10,
+                "full_frame_scan": true,
+                "max_decode_frames": 20000,
+                "max_pixels": 2097152,
+                "preview_frames": 8,
+                "preview_size": 96,
+                "dark_level": 5,
+                "bright_level": 250
+              },
+              "requested_rows": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "missing_rows": [],
+              "measured_count": 25,
+              "identical_pair_count": 0,
+              "preview": [
+                {
+                  "source_row": 0,
+                  "presentation_time_s": 76.66666666666667,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1743.8069331367726,
+                  "clipped_fraction": 0.09149169921875,
+                  "luma_sha256": "ca7eeeadd57b3bdd439d2d759bb0f637f5ce35517a5a914a8150f27cf2b6f127"
+                },
+                {
+                  "source_row": 1,
+                  "presentation_time_s": 76.73333333333333,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1539.9655153735578,
+                  "clipped_fraction": 0.09844970703125
+                },
+                {
+                  "source_row": 2,
+                  "presentation_time_s": 76.8,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1726.3991445799911,
+                  "clipped_fraction": 0.1087646484375
+                },
+                {
+                  "source_row": 3,
+                  "presentation_time_s": 76.86666666666666,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1476.0615236922017,
+                  "clipped_fraction": 0.10858154296875,
+                  "luma_sha256": "10d5744f6b93c4358f4c2a4ca0982b0866985fd72d7146955a8acbe2367e2ef2"
+                },
+                {
+                  "source_row": 4,
+                  "presentation_time_s": 76.93333333333334,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1660.6889526396608,
+                  "clipped_fraction": 0.104736328125
+                },
+                {
+                  "source_row": 5,
+                  "presentation_time_s": 77,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1500.7606594073243,
+                  "clipped_fraction": 0.0997314453125,
+                  "luma_sha256": "2c58ea521075edd2ad13f48cba6f00be21632c0d952594a1b9c6e5db792a65bc"
+                },
+                {
+                  "source_row": 6,
+                  "presentation_time_s": 77.06666666666666,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1626.217449100437,
+                  "clipped_fraction": 0.1046142578125
+                },
+                {
+                  "source_row": 7,
+                  "presentation_time_s": 77.13333333333334,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1554.6058248556762,
+                  "clipped_fraction": 0.13104248046875
+                },
+                {
+                  "source_row": 8,
+                  "presentation_time_s": 77.2,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1403.5947651579522,
+                  "clipped_fraction": 0.13232421875,
+                  "luma_sha256": "8077d86b6c0e370e2fc31d1521b7113833132cf570899db3a2e109508ddf5a9e"
+                },
+                {
+                  "source_row": 9,
+                  "presentation_time_s": 77.26666666666667,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1405.685468865732,
+                  "clipped_fraction": 0.13128662109375
+                },
+                {
+                  "source_row": 10,
+                  "presentation_time_s": 77.33333333333333,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1366.3846235359254,
+                  "clipped_fraction": 0.1273193359375
+                },
+                {
+                  "source_row": 11,
+                  "presentation_time_s": 77.4,
+                  "shape": [
+                    84,
+                    84
+                  ],
+                  "blur_score": 1235.2119586546773,
+                  "clipped_fraction": 0.12969970703125,
+                  "luma_sha256": "dc9bff6e5937ba1f43ed0fc57bdd5929b590694240120d32d017160ab05a61fc"
+                }
+              ]
+            }
+          }
+        ],
+        "labels": null
+      }
+    ],
+    "page": {
+      "after": 46,
+      "limit": 1,
+      "total_episodes": 800,
+      "next_after": 47
+    },
+    "labels": {
+      "review": "auto"
+    }
+  }
+]
