@@ -12,6 +12,9 @@ vulnerability reporting: open the **Security** tab and choose **Report a vulnera
 Include the affected commit or version, reproduction steps, and the impact you observed.
 We will acknowledge the report, work on a fix, and coordinate disclosure with you.
 
+You can also email [reports@kalanos.ai](mailto:reports@kalanos.ai). Email is not encrypted,
+so use the GitHub advisory for sensitive technical detail.
+
 Never include real credentials, private reports or private datasets in a report.
 
 ## Scope

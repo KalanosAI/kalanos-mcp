@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" role="img" aria-labelledby="title desc">
+<title id="title">Kalanos MCP: robotics dataset evidence for your training workflow</title>
+<desc id="desc">Connect published Kalanos reports to verified episode selections and LeRobot loading.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101d34"/><stop offset="1" stop-color="#122a3b"/></linearGradient></defs>
+<rect width="1200" height="310" rx="20" fill="url(#bg)"/>
+<path d="M856 0v310M936 0v310M1016 0v310M1096 0v310M1176 0v310M800 55h400M800 135h400M800 215h400M800 295h400" stroke="#284356" stroke-opacity=".4"/>
+<rect x="42" y="34" width="5" height="30" rx="2" fill="#59dec5"/>
+<text x="61" y="58" fill="#8ce8d6" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2">ROBOTICS DATA, WITH CONTEXT</text>
+<text x="42" y="132" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Kalanos MCP</text>
+<text x="44" y="182" fill="#d9e5f1" font-family="Arial, Helvetica, sans-serif" font-size="29">Choose episodes with evidence.</text>
+<text x="44" y="220" fill="#d9e5f1" font-family="Arial, Helvetica, sans-serif" font-size="29">Load them with LeRobot.</text>
+<rect x="43" y="248" width="360" height="40" rx="20" fill="#223d50"/><text x="63" y="275" fill="#b5f2e6" font-family="Arial, Helvetica, sans-serif" font-size="19">REPORT → SELECTION → LOADER</text>
+<g transform="translate(821 35)">
+<rect width="300" height="240" rx="14" fill="#172e43" stroke="#466174"/>
+<rect x="20" y="21" width="67" height="7" rx="3" fill="#7394ab"/>
+<text x="20" y="68" fill="#f3f7fb" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Episode decisions</text>
+<circle cx="29" cy="102" r="6" fill="#59dec5"/><text x="48" y="109" fill="#dde9f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Pass</text>
+<circle cx="29" cy="138" r="6" fill="#f2c76d"/><text x="48" y="145" fill="#dde9f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Review</text>
+<circle cx="29" cy="174" r="6" fill="#ec9e9e"/><text x="48" y="181" fill="#dde9f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Blocked</text>
+<circle cx="29" cy="210" r="6" fill="#9cafc1"/><text x="48" y="217" fill="#dde9f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Unknown</text>
+</g>
+</svg>
