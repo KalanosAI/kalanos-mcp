@@ -39,6 +39,23 @@ Use `https://mcp.kalanos.ai/mcp` with **Streamable HTTP** and **no authenticatio
 See the [client setup guide](https://kalanos.ai/mcp) for examples. This repository
 contains integrations and Registry metadata, not the hosted server source.
 
+Example client configuration (VS Code `.vscode/mcp.json`; other clients take the
+same URL and transport):
+
+```json
+{
+  "servers": {
+    "kalanos": {
+      "type": "http",
+      "url": "https://mcp.kalanos.ai/mcp"
+    }
+  }
+}
+```
+
+No API key, sign-in or local install is needed. Anonymous requests are rate limited
+per IP.
+
 | Tool | What it returns |
 | --- | --- |
 | `search_datasets` | Published datasets relevant to a text query. |

@@ -3,8 +3,12 @@
   "name": "io.github.KalanosAI/kalanos-mcp",
   "title": "Kalanos Robotics Dataset Audits",
   "description": "Find public robotics dataset audits, including LeRobot. See what was checked and flagged.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://kalanos.ai/mcp",
+  "repository": {
+    "url": "https://github.com/KalanosAI/kalanos-mcp",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://framerusercontent.com/images/DrkCkj2LuqAJZaXEVtBLC0r4c.png",
