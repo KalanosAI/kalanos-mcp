@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KalanosAI/kalanos-mcp",
+  "title": "Kalanos Robotics Dataset Audits",
+  "description": "Find public robotics dataset audits. Inspect scores, check coverage, and episode-level findings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://kalanos.ai/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.kalanos.ai/mcp"
+    }
+  ]
+}

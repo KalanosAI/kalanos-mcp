@@ -33,6 +33,27 @@ hosted Kalanos MCP service already exists, and its server is not part of this re
 [See the verified example](integrations/lerobot/docs/REAL_DATA_TEST.md) ·
 [Visit Kalanos](https://kalanos.ai/)
 
+## Connect to the hosted Kalanos MCP
+
+Use `https://mcp.kalanos.ai/mcp` with **Streamable HTTP** and **no authentication**.
+See the [client setup guide](https://kalanos.ai/mcp) for examples. This repository
+contains integrations and Registry metadata, not the hosted server source.
+
+| Tool | What it returns |
+| --- | --- |
+| `search_datasets` | Published datasets relevant to a text query. |
+| `list_datasets` | An alphabetical list of published datasets, optionally filtered by a substring. |
+| `search_combined_datasets` | Dataset results for combined filters such as task, objects, and scene. |
+| `get_report` | A published assessment with its score, coverage, and report revision. |
+| `get_findings` | Episode decisions and evidence for an exact report revision. |
+| `search_episodes` | Episodes matching task, object, or scene labels within a dataset; label matches are not audit findings. |
+
+Try asking: “Show the published audit for `lerobot/pusht` and tell me what was
+checked.” The service reads published evidence only. It cannot grade a dataset,
+publish a report, or access local or private data. To run an audit on your own
+data, use the [Kalanos Grader CLI](https://kalanos.ai/grader).
+
+
 ## From a dataset report to your training input
 
 You have a dataset and a training pipeline. Before the next run, you need to

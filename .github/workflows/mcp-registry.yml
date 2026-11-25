@@ -1,0 +1,49 @@
+name: MCP Registry
+
+on:
+  pull_request:
+    paths:
+      - server.json
+      - .github/workflows/mcp-registry.yml
+      - .github/scripts/install-mcp-publisher.sh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate server.json
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - run: bash .github/scripts/install-mcp-publisher.sh
+      - run: '"$RUNNER_TEMP/mcp-publisher" validate server.json'
+
+  publish:
+    name: Publish to the official MCP Registry
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.repository == 'KalanosAI/kalanos-mcp' &&
+      github.ref == 'refs/heads/main' &&
+      github.ref_protected
+    needs: validate
+    environment: mcp-registry-publish
+    concurrency:
+      group: mcp-registry-publish
+      cancel-in-progress: false
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - run: bash .github/scripts/install-mcp-publisher.sh
+      - name: Publish with GitHub OIDC
+        run: |
+          "$RUNNER_TEMP/mcp-publisher" login github-oidc
+          "$RUNNER_TEMP/mcp-publisher" publish server.json
